@@ -5,8 +5,8 @@
 
 /*global $, spa */
 var sdspa = (function () {
-    var initializeModule = function ( $html_body_container ) {
-        sdspa.shell.initializeModule( $html_body_container );
+    var initializeModule = function ( $html_container ) {
+        sdspa.shell.initializeModule( $html_container );
     };
 
     return { initializeModule: initializeModule };

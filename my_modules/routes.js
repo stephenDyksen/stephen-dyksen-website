@@ -9,7 +9,7 @@ configRoutes = function ( app, server ) {
 
   app.get( '/', function ( request, response ) {
     //response.send( 'Hello World' );
-    response.redirect( '/stephenspa.html' );
+    response.redirect( '/sdspa.html' );
   });
   /*
    * The .all selector will apply to all the requests
