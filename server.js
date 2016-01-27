@@ -26,5 +26,5 @@ routes.configRoutes( app, server );
 
 // ---------- BEGIN START SERVER ----------
 server.listen( app.get( 'port' ), app.get( 'ip' ) );
-console.log( 'Express Server Started' );
+console.log( 'Express Server Successfully Started' );
 // ----------- END START SERVER -----------

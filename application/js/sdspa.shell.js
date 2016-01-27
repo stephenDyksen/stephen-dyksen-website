@@ -16,8 +16,10 @@ sdspa.shell = (function () {
             },
 
             html_content : String() +
-             '<div class="sdspa-shell-header"></div>' +
-             '<div class="sdspa-shell-body"></div>'
+              '<div class="sdspa-shell">'+
+                '<div class="sdspa-shell-header"></div>' +
+                '<div class="sdspa-shell-body"></div>' +
+              '</div>'
         },
 
         // Place dynamic information shared across the module in dynamicStateMap.
@@ -44,9 +46,9 @@ sdspa.shell = (function () {
     setJqueryMap = function () {
       var $container = jqueryMap.$html_container;
       jqueryMap = {
-        $container: $container,
-        $html_header: $container.find('.sdspa-shell-header'),
-        $html_body: $container.find('.sdspa-shell-body')
+        $html_container: $container,
+        $html_header_container: $container.find('.sdspa-shell-header'),
+        $html_body_container: $container.find('.sdspa-shell-body')
       };
     };
 
@@ -120,6 +122,7 @@ sdspa.shell = (function () {
     // End DOM method /changeAnchorPart/
     //--------------------- END DOM METHODS ----------------------
 
+
     //------------------- BEGIN EVENT HANDLERS -------------------
     // Begin Event handler /onHashchange/
     // Purpose : Handles the hashchange event
@@ -189,6 +192,7 @@ sdspa.shell = (function () {
 
     //-------------------- END EVENT HANDLERS --------------------
 
+
     //---------------------- BEGIN CALLBACKS ---------------------
     // Because functions are first-class objects, we can pass a function as an
     // argument in another function and later execute that passed-in function
@@ -213,6 +217,7 @@ sdspa.shell = (function () {
     // End callback method /setChatAnchor/
     //----------------------- END CALLBACKS ----------------------
 
+
     //------------------- BEGIN PUBLIC METHODS -------------------
     // Begin Public method /initializeModule/
     // Example : spa.shell.initializeModule( $('#app_div_id') );
@@ -234,6 +239,7 @@ sdspa.shell = (function () {
         // load HTML and map jQuery collections
         jqueryMap.$html_container = $html_container;
         jqueryMap.$html_container.html( staticConfigurationMap.html_content );
+        setJqueryMap();
 
         // configure uriAnchor to use our schema
         $.uriAnchor.configModule({
@@ -241,10 +247,10 @@ sdspa.shell = (function () {
         });
 
         // configure and initialize feature modules
-        spa.header.configureModule({
+        sdspa.header.configureModule({
           // pass callback functions here
         });
-        spa.header.initializeModule(jqueryMap.$html_header);
+        sdspa.header.initializeModule(jqueryMap.$html_header_container);
 
         // Handle URI anchor change events.
         // This is done after all feature modules are configured
