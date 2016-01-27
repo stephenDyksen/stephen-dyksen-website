@@ -447,3 +447,13 @@ body {
   color:#E54234;
 }
 /* ----------- END Global sdspa CSS ----------- */
+
+
+/* BEGIN CSS Media Queries */
+
+
+@media only screen and (max-width: 920px) {
+  #sdspa {
+    margin: 0 15px;
+  }
+}

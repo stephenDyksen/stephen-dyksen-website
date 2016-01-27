@@ -77,7 +77,7 @@
 .sdspa-shell-header-mainnavcontainer {
   width: 100%;
   padding-bottom: 30px;
-  border-bottom: 2px solid #E54234;
+  border-bottom: 1px solid #F8CECB;
 }
 
 .sdspa-shell-header-mainnavcontainer-name {
@@ -88,18 +88,18 @@
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav {
-  color: #FFFFFF;
+  color: #E54234;
   float: right;
   margin-right: 24px;
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav a {
-  color: #FFFFFF;
+  color: #E54234;
   padding-left:24px;
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav a span {
-	background: #FF715F;
+	background: #FFFFFF;
   min-width: 94px;
   text-align: center;
   margin-top: 10px;
@@ -146,3 +146,40 @@
 	background: #E54234;
   color: #FFFFFF;
 }
+
+
+/* BEGIN CSS Media Queries */
+
+
+@media only screen and (max-width: 920px) {
+  .sdspa-shell-header-mainnavcontainer-name {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav {
+    float: none;
+    margin-right: -20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav a {
+    padding-left: 0;
+    padding-right: 24px;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav a span {
+    min-width: 97px;
+  }
+
+  .sdspa-shell-header-subnavcontainer-writingnav {
+    padding-left: 0;
+    text-align: center;
+    margin-left: -25px;
+  }
+}
+
+
+/* END CSS Media Queries */
