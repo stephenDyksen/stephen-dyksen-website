@@ -76,7 +76,7 @@
 
 .sdspa-shell-header-mainnavcontainer {
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   border-bottom: 2px solid #E54234;
 }
 
@@ -84,11 +84,13 @@
   display: inline;
   font-size: 48px;
   letter-spacing: 2px;
+  margin-left: 24px;
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav {
   color: #FFFFFF;
   float: right;
+  margin-right: 24px;
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav a {
@@ -119,8 +121,8 @@
 }
 
 .sdspa-shell-header-subnavcontainer-writingnav {
-  height: 61px;
-  padding-left:218px;
+  height: 75px;
+  padding-left:4px;
 }
 
 .sdspa-shell-header-subnavcontainer-writingnav a {
@@ -130,7 +132,7 @@
 .sdspa-shell-header-subnavcontainer-writingnav a span {
 	background: #FFFFFF;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 17px;
   min-width: 94px;
   margin-left: 24px;
 }
