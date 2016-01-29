@@ -436,12 +436,11 @@ th {
 
 /* ---------- BEGIN Global sdspa CSS ---------- */
 body {
-  background: #FFFFFF;
+  background: #E54234;
   font-family: 'Ubuntu', sans-serif;
 }
 
 #sdspa {
-  max-width: 1100px;
   margin: 0 auto;
   background: #FFFFFF;
   color:#E54234;
@@ -453,7 +452,5 @@ body {
 
 
 @media only screen and (max-width: 920px) {
-  #sdspa {
-    margin: 0 15px;
-  }
+
 }

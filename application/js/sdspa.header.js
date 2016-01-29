@@ -15,18 +15,19 @@ sdspa.header = (function () {
               '<div class="sdspa-shell-header-mainnavcontainer">' +
                 '<div class="sdspa-shell-header-mainnavcontainer-name">STEPHEN DYKSEN</div>' +
                 '<nav class="sdspa-shell-header-mainnavcontainer-mainnav nav-link-rolling-effect">' +
-					        '<a href="#"><span data-hover="BIO">BIO</span></a>' +
 					        '<a href="#"><span data-hover="PROJECTS">PROJECTS</span></a>' +
+                  '<a href="#"><span data-hover="BIO">BIO</span></a>' +
 					        '<a href="#"><span data-hover="WRITINGS">WRITINGS</span></a>' +
 				        '</nav>' +
-              '</div>'+
-              '<div class="sdspa-shell-header-subnavcontainer">' +
-                '<nav class="sdspa-shell-header-subnavcontainer-writingnav nav-link-rolling-effect">' +
-                  '<a href="#"><span data-hover="UX">UX</span></a>' +
-                  '<a href="#"><span data-hover="TECH">TECH</span></a>' +
-                  '<a href="#"><span data-hover="LIFE">LIFE</span></a>' +
-                '</nav>' +
-              '</div>'
+              '</div>' +
+              '<div class="sdspa-shell-header-bottomborder"></div>'
+              // '<div class="sdspa-shell-header-subnavcontainer">' +
+              //   '<nav class="sdspa-shell-header-subnavcontainer-writingnav nav-link-rolling-effect">' +
+              //     '<a href="#"><span data-hover="TECH">TECH</span></a>' +
+              //     '<a href="#"><span data-hover="UX">UX</span></a>' +
+              //     '<a href="#"><span data-hover="LIFE">LIFE</span></a>' +
+              //   '</nav>' +
+              // '</div>'
         },
 
         // Use to cache jquery collections, and avoid extraneous document traversals
