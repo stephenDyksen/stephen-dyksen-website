@@ -1,0 +1,34 @@
+.sdspa-shell-body {
+  background: #E54234;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sdspa-shell-body-pageitem {
+  box-shadow: 0 4px 4px 3px rgba(0,0,0,0.2);
+}
+
+.sdspa-shell-body-projectscontainer {
+  background: orange;
+  height: 100px;
+  width: 1320px;
+  position: absolute;
+  top: 145px;
+  left: 0;
+  margin-left: -1300px;
+}
+
+.sdspa-shell-body-biocontainer {
+  background: black;
+  margin: 30px 18px;
+  height: 100px;
+}
+
+.sdspa-shell-body-writingscontainer {
+  background: pink;
+  height: 100px;
+  width: 1000px;
+  position: absolute;
+  top: 145px;
+  right: 0;
+}
