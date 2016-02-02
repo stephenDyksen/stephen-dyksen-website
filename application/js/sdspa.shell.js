@@ -18,7 +18,9 @@ sdspa.shell = (function () {
             html_content : String() +
               '<div class="sdspa-shell">'+
                 '<div class="sdspa-shell-header"></div>' +
-                '<div class="sdspa-shell-body"></div>' +
+                '<div class="sdspa-shell-body">' +
+                  '<div class="sdspa-shell-body-biocontainer sdspa-shell-body-pageitem"></div>' +
+                '</div>' +
               '</div>'
         },
 
