@@ -9,8 +9,10 @@ Colors:
   position: relative;
   text-transform: uppercase;
   margin: 0 auto;
-  padding-top: 33px;
+  padding-top: 28px;
   box-shadow: 0 8px 6px rgba(0,0,0,0.2);
+  background: #FFFFFF;
+  color: #E54234;
 }
 
 /* BEGIN Rolling Links idea from http://tympanus.net/Development/CreativeLinkEffects/#nav-link-rolling-effect */
@@ -86,7 +88,7 @@ Colors:
 
 .sdspa-shell-header-mainnavcontainer {
   width: 100%;
-  padding-bottom: 35px;
+  padding-bottom: 32px;
   max-width: 1200px;
   margin: 0 auto;
   /*border-bottom: 1px solid #F8CECB;*/
@@ -96,13 +98,13 @@ Colors:
   display: inline;
   font-size: 48px;
   letter-spacing: 2px;
-  margin-left: 24px;
+  margin-left: 28px;
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav {
   color: #E54234;
   float: right;
-  margin-right: 24px;
+  margin-right: 28px;
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav a {
@@ -112,7 +114,7 @@ Colors:
 
 .sdspa-shell-header-mainnavcontainer-mainnav a span {
 	background: #FFFFFF;
-  min-width: 94px;
+  min-width: 95px;
   text-align: center;
   margin-top: 10px;
 }
@@ -139,7 +141,7 @@ Colors:
 
   .sdspa-shell-header-mainnavcontainer-mainnav {
     float: none;
-    margin-right: -20px;
+    margin-right: -19px;
     text-align: center;
     margin-top: 10px;
   }
@@ -147,10 +149,6 @@ Colors:
   .sdspa-shell-header-mainnavcontainer-mainnav a {
     padding-left: 0;
     padding-right: 24px;
-  }
-
-  .sdspa-shell-header-mainnavcontainer-mainnav a span {
-    min-width: 97px;
   }
 }
 
@@ -166,8 +164,12 @@ Colors:
   }
 
   .sdspa-shell-header-mainnavcontainer {
-      width: 100%;
-      padding-bottom: 22px;
+    width: 100%;
+    padding-bottom: 22px;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav {
+    margin-right: -11px;
   }
 
   .sdspa-shell-header-mainnavcontainer-name {
@@ -177,6 +179,16 @@ Colors:
   .sdspa-shell-header-mainnavcontainer-mainnav a {
     padding-right: 15px;
   }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav a span {
+    min-width: 65px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+    .sdspa-shell-header-mainnavcontainer-mainnav a {
+      display: block;
+    }
 }
 
 /* END CSS Media Queries */

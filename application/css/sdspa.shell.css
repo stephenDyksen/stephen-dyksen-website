@@ -1,15 +1,6 @@
 .sdspa-shell {
 }
 
-.sdspa-shell-header {
-  position: relative;
-  text-transform: uppercase;
-  margin: 0 auto;
-  padding-top: 42px;
-  background: #FFFFFF;
-  color: #E54234;
-}
-
 .sdspa-shell-body {
   background: #E54234;
   max-width: 1300px;
