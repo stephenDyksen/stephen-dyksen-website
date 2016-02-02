@@ -19,8 +19,7 @@ sdspa.header = (function () {
                   '<a href="#"><span data-hover="BIO">BIO</span></a>' +
 					        '<a href="#"><span data-hover="WRITINGS">WRITINGS</span></a>' +
 				        '</nav>' +
-              '</div>' +
-              '<div class="sdspa-shell-header-bottomborder"></div>'
+              '</div>'
               // '<div class="sdspa-shell-header-subnavcontainer">' +
               //   '<nav class="sdspa-shell-header-subnavcontainer-writingnav nav-link-rolling-effect">' +
               //     '<a href="#"><span data-hover="TECH">TECH</span></a>' +

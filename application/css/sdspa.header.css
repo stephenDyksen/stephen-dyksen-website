@@ -9,7 +9,8 @@ Colors:
   position: relative;
   text-transform: uppercase;
   margin: 0 auto;
-  padding-top: 42px;
+  padding-top: 33px;
+  box-shadow: 0 8px 6px rgba(0,0,0,0.2);
 }
 
 /* BEGIN Rolling Links idea from http://tympanus.net/Development/CreativeLinkEffects/#nav-link-rolling-effect */
@@ -85,8 +86,8 @@ Colors:
 
 .sdspa-shell-header-mainnavcontainer {
   width: 100%;
-  padding-bottom: 30px;
-  max-width: 1500px;
+  padding-bottom: 35px;
+  max-width: 1200px;
   margin: 0 auto;
   /*border-bottom: 1px solid #F8CECB;*/
 }
@@ -124,14 +125,6 @@ Colors:
 .sdspa-shell-header-mainnavcontainer-mainnav a:focus span::before {
 	background: #E54234;
   color: #FFFFFF;
-}
-
-.sdspa-shell-header-bottomborder {
-  background: #E54234;
-  width: 100%;
-  height: 10px;
-  margin-top: 11px;
-  box-shadow: 0 8px 6px rgba(0,0,0,0.2) inset;
 }
 
 /* BEGIN CSS Media Queries */
