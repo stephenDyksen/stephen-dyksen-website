@@ -22,9 +22,7 @@ sdspa.shell = (function () {
             html_content : String() +
               '<div class="sdspa-shell">'+
                 '<div class="sdspa-shell-header"></div>' +
-                '<div class="sdspa-shell-body">' +
-                  '<div class="sdspa-shell-body-biocontainer sdspa-shell-body-pageitem"></div>' +
-                '</div>' +
+                '<div class="sdspa-shell-body"></div>' +
               '</div>'
         },
 
@@ -249,11 +247,17 @@ sdspa.shell = (function () {
             schema_map : staticConfigurationMap.anchor_schema_map
         });
 
-        // configure and initialize feature modules
-        sdspa.header.configureModule({
+        // BEGIN configure and initialize feature modules
+        sdspa.shell.header.configureModule({
           // pass callback functions here
         });
-        sdspa.header.initializeModule(jqueryMap.$html_header_container);
+        sdspa.shell.header.initializeModule(jqueryMap.$html_header_container);
+
+        sdspa.shell.body.configureModule({
+          // pass callback functions here
+        });
+        sdspa.shell.body.initializeModule(jqueryMap.$html_body_container);
+        // END configure and initialize feature modules
 
         // Handle URI anchor change events.
         // This is done after all feature modules are configured

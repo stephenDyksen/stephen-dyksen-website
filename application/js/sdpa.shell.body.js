@@ -1,32 +1,20 @@
 /*
- * sdspa.shell.js
- * Header module for SPA
+ * sdspa.shell.body.js
+ * Body module for SPA
  */
 
 /*global $, spa */
 
-sdspa.header = (function () {
+sdspa.shell.body = (function () {
     //---------------- BEGIN MODULE SCOPED VARIABLES --------------
     var
         // Use to store static configuration values
         staticConfigurationMap = {
 
-            html_header : String() +
-              '<div class="sdspa-shell-header-mainnavcontainer">' +
-                '<div class="sdspa-shell-header-mainnavcontainer-name">STEPHEN DYKSEN</div>' +
-                '<nav class="sdspa-shell-header-mainnavcontainer-mainnav nav-link-rolling-effect">' +
-					        '<a href="#"><span data-hover="PROJECTS">PROJECTS</span></a>' +
-                  '<a href="#"><span data-hover="BIO">BIO</span></a>' +
-					        '<a href="#"><span data-hover="WRITINGS">WRITINGS</span></a>' +
-				        '</nav>' +
-              '</div>'
-              // '<div class="sdspa-shell-header-subnavcontainer">' +
-              //   '<nav class="sdspa-shell-header-subnavcontainer-writingnav nav-link-rolling-effect">' +
-              //     '<a href="#"><span data-hover="TECH">TECH</span></a>' +
-              //     '<a href="#"><span data-hover="UX">UX</span></a>' +
-              //     '<a href="#"><span data-hover="LIFE">LIFE</span></a>' +
-              //   '</nav>' +
-              // '</div>'
+            html_body : String() +
+              '<div class="sdspa-shell-body-projectscontainer sdspa-shell-body-pageitem"></div>' +
+              '<div class="sdspa-shell-body-biocontainer sdspa-shell-body-pageitem"></div>' +
+              '<div class="sdspa-shell-body-writingscontainer sdspa-shell-body-pageitem"></div>'
         },
 
         // Use to cache jquery collections, and avoid extraneous document traversals
@@ -43,7 +31,7 @@ sdspa.header = (function () {
 
     //--------------------- BEGIN DOM METHODS --------------------
     setJqueryMap = function () {
-      var $container = jqueryMap.$html_container;
+      var $container = jqueryMap.$html_body_container;
       jqueryMap = {
         $container: $container,
         $html_header: $container.find('sdspa-shell-header'),
@@ -65,10 +53,10 @@ sdspa.header = (function () {
     };
 
     // Begin PUBLIC method /initializeModule/
-    initializeModule = function ( $html_header_container ) {
+    initializeModule = function ( $html_body_container ) {
         // load HTML and map jQuery collections
-        jqueryMap.$html_header_container = $html_header_container;
-        jqueryMap.$html_header_container.html( staticConfigurationMap.html_header );
+        jqueryMap.$html_body_container = $html_body_container;
+        jqueryMap.$html_body_container.html( staticConfigurationMap.html_body );
 
         // configure and initialize feature modules
     };

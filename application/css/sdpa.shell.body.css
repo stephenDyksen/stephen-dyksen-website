@@ -1,0 +1,15 @@
+.sdspa-shell-body {
+  background: #E54234;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sdspa-shell-body-pageitem {
+  background: #FFFFFF;
+  box-shadow: 0 4px 4px 3px rgba(0,0,0,0.2);
+}
+
+.sdspa-shell-body-biocontainer {
+  margin: 30px 18px;
+  height: 100px;
+}

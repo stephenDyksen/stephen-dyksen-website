@@ -1,5 +1,5 @@
 /*
- * sdspa.shell.js
+ * sdspa.shell.header.js
  * Header module for SPA
  */
 
@@ -36,7 +36,7 @@ sdspa.shell.header = (function () {
 
     //--------------------- BEGIN DOM METHODS --------------------
     setJqueryMap = function () {
-      var $container = jqueryMap.$html_container;
+      var $container = jqueryMap.$html_header_container;
       jqueryMap = {
         $container: $container,
         $html_header: $container.find('sdspa-shell-header'),
