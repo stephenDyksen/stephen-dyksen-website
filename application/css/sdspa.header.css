@@ -5,13 +5,6 @@ Colors:
 #D63E31*
 */
 
-.sdspa-shell-header {
-  position: relative;
-  text-transform: uppercase;
-  margin: 0 auto;
-  padding-top: 42px;
-}
-
 /* BEGIN Rolling Links idea from http://tympanus.net/Development/CreativeLinkEffects/#nav-link-rolling-effect */
 .nav-link-rolling-effect a {
 	line-height: 38px;
