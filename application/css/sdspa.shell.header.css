@@ -1,0 +1,188 @@
+/*
+Colors:
+#FF715F
+#E54234
+#D63E31*
+*/
+
+.sdspa-shell-header {
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-top: 28px;
+  box-shadow: 0 8px 6px rgba(0,0,0,0.2);
+  background: #FFFFFF;
+  color: #E54234;
+}
+
+/* BEGIN Rolling Links idea from http://tympanus.net/Development/CreativeLinkEffects/#nav-link-rolling-effect */
+.nav-link-rolling-effect a {
+	line-height: 38px;
+  letter-spacing: 1px;
+
+  /* perspective applies to the child element, and only affects 3d transformed elements */
+	-webkit-perspective: 1000px;
+	   -moz-perspective: 1000px;
+        	perspective: 1000px;
+}
+
+.nav-link-rolling-effect a span {
+	position: relative;
+	display: inline-block;
+	padding: 0 14px;
+
+  -webkit-transition: -webkit-transform 0.3s;
+     -moz-transition:    -moz-transform 0.3s;
+      -ms-transition:    -moz-transform 0.3s;
+       -o-transition:    -moz-transform 0.3s;
+          transition:         transform 0.3s;
+
+	-webkit-transform-origin: 50% 0;
+	   -moz-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+	     -o-transform-origin: 50% 0;
+	        transform-origin: 50% 0;
+
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+}
+
+.nav-link-rolling-effect a span::before {
+	position: absolute;
+  text-align: center;;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: attr(data-hover);
+
+	-webkit-transition: background 0.3s;
+	   -moz-transition: background 0.3s;
+      -ms-transition: background 0.3s;
+       -o-transition: background 0.3s;
+          transition: background 0.3s;
+
+	-webkit-transform: rotateX(-90deg);
+	   -moz-transform: rotateX(-90deg);
+      -ms-transform: rotateX(-90deg);
+       -o-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+
+	-webkit-transform-origin: 50% 0;
+	   -moz-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+       -o-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+
+.nav-link-rolling-effect a:hover span,
+.nav-link-rolling-effect a:focus span {
+	-webkit-transform: rotateX(90deg) translateY(-22px);
+	   -moz-transform: rotateX(90deg) translateY(-22px);
+      -ms-transform: rotateX(90deg) translateY(-22px);
+       -o-transform: rotateX(90deg) translateY(-22px);
+        	transform: rotateX(90deg) translateY(-22px);
+}
+/* END Rolling Links idea from http://tympanus.net/Development/CreativeLinkEffects/#nav-link-rolling-effect */
+
+.sdspa-shell-header-mainnavcontainer {
+  width: 100%;
+  padding-bottom: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /*border-bottom: 1px solid #F8CECB;*/
+}
+
+.sdspa-shell-header-mainnavcontainer-name {
+  display: inline;
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-left: 28px;
+}
+
+.sdspa-shell-header-mainnavcontainer-mainnav {
+  color: #E54234;
+  float: right;
+  margin-right: 28px;
+}
+
+.sdspa-shell-header-mainnavcontainer-mainnav a {
+  color: #E54234;
+  padding-left:24px;
+}
+
+.sdspa-shell-header-mainnavcontainer-mainnav a span {
+	background: #FFFFFF;
+  min-width: 95px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sdspa-shell-header-mainnavcontainer-mainnav a span::before {
+	background: #FF715F;
+}
+
+.sdspa-shell-header-mainnavcontainer-mainnav a:hover span::before,
+.sdspa-shell-header-mainnavcontainer-mainnav a:focus span::before {
+	background: #E54234;
+  color: #FFFFFF;
+}
+
+/* BEGIN CSS Media Queries */
+
+
+@media only screen and (max-width: 920px) {
+  .sdspa-shell-header-mainnavcontainer-name {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav {
+    float: none;
+    margin-right: -19px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav a {
+    padding-left: 0;
+    padding-right: 24px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+
+  .sdspa-shell-header-mainnavcontainer {
+    width: 100%;
+    padding-bottom: 22px;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav {
+    margin-right: -11px;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-name {
+    font-size: 24px;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav a {
+    line-height: 26px;
+    font-size: 11px;
+    padding-right: 15px;
+  }
+
+  .sdspa-shell-header-mainnavcontainer-mainnav a span {
+    min-width: 65px;
+    padding: 0 9px;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+    .sdspa-shell-header-mainnavcontainer-mainnav a {
+      display: block;
+    }
+}
+
+/* END CSS Media Queries */

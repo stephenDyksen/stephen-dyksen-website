@@ -1,4 +1,5 @@
 .sdspa-shell {
+  background: #E54234;
 }
 
 .sdspa-shell-body {
@@ -9,7 +10,7 @@
 
 .sdspa-shell-body-pageitem {
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 4px 3px rgba(0,0,0,0.2);
 }
 
 .sdspa-shell-body-biocontainer {

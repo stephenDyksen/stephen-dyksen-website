@@ -12,7 +12,11 @@ sdspa.shell = (function () {
         staticConfigurationMap = {
             // See https://github.com/mmikowski/urianchor
             anchor_schema_map : {
-                chat : { opened : true, closed : true }
+              section : {
+                projects : true,
+                bio : true,
+                writings : true
+              }
             },
 
             html_content : String() +
@@ -25,7 +29,9 @@ sdspa.shell = (function () {
         },
 
         // Place dynamic information shared across the module in dynamicStateMap.
-        dynamicStateMap = { anchor_map : {} },
+        dynamicStateMap = {
+          anchor_map : {}
+        },
 
         // Use to cache jquery collections, and avoid extraneous document traversals
         jqueryMap = {},
@@ -140,7 +146,7 @@ sdspa.shell = (function () {
     //
     onHashchange = function ( event ) {
         var
-            _s_chat_previous, _s_chat_proposed, s_chat_proposed,
+            _s_section_previous, _s_section_proposed, s_section_proposed,
             anchor_map_proposed,
             is_ok = true,
             anchor_map_previous = copyAnchorMap();
@@ -153,19 +159,21 @@ sdspa.shell = (function () {
         }
         dynamicStateMap.anchor_map = anchor_map_proposed;
 
-        // convenience vars
-        _s_chat_previous = anchor_map_previous._s_chat;
-        _s_chat_proposed = anchor_map_proposed._s_chat;
+        // Begin adjust section component if changed
+        _s_section_previous = anchor_map_previous._s_section;
+        _s_section_proposed = anchor_map_proposed._s_section;
 
-        // Begin adjust chat component if changed
-        if ( ! anchor_map_previous || _s_chat_previous !== _s_chat_proposed) {
-            s_chat_proposed = anchor_map_proposed.chat;
-            switch ( s_chat_proposed ) {
-                case 'opened' :
-                    is_ok = spa.chat.setSliderPosition( 'opened' );
+        if ( ! anchor_map_previous || _s_section_previous !== _s_section_proposed) {
+            s_section_proposed = anchor_map_proposed.chat;
+            switch ( s_section_proposed ) {
+                case 'projects' :
+                    is_ok = spa.body.setBody( 'projects' );
                     break;
-                case 'closed' :
-                    is_ok = spa.chat.setSliderPosition( 'closed' );
+                case 'bio' :
+                    is_ok = spa.body.setSliderPosition( 'bio' );
+                    break;
+                case 'writings' :
+                    is_ok = spa.body.setSliderPosition( 'writings' );
                     break;
                 default :
                     spa.chat.setSliderPosition( 'closed' );
@@ -205,13 +213,6 @@ sdspa.shell = (function () {
     // Purpose : Change the chat component of the anchor
     // Arguments:
     // * position_type - may be 'closed' or 'opened'
-    // Action :
-    // Changes the URI anchor parameter 'chat' to the requested
-    // value if possible.
-    // Returns :
-    // * true - requested anchor part was updated
-    // * false - requested anchor part was not updated
-    // Throws : none
     //
     setChatAnchor = function ( position_type ){
         return changeAnchorPart({ chat : position_type });
