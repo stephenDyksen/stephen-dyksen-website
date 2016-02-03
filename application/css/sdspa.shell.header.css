@@ -109,7 +109,8 @@ Colors:
 
 .sdspa-shell-header-mainnavcontainer-mainnav a {
   color: #E54234;
-  padding-left:24px;
+  padding: 10px 0 12px 24px;
+  cursor: pointer;
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav a span {

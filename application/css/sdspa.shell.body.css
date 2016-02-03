@@ -4,32 +4,41 @@
   margin: 0 auto;
 }
 
-.sdspa-shell-body-lift {
+.sdspa-shell-body-bodywrap {
+  position: relative;
+  margin: 30px 18px;
+}
+
+.sdspa-shell-body-bodywrap-container {
+  position: absolute;
+  transition: all 800ms ease;
+  transform: scale(0,0);
+  opacity: 0;
+}
+
+.sdspa-shell-body-bodywrap-container-item {
   box-shadow: 0 4px 4px 3px rgba(0,0,0,0.2);
 }
 
-.sdspa-shell-body-projectscontainer {
+/* BEGIN Body animations for float in/out */
+
+.sdspa-shell-body-bodywrap-container-open {
+  transform: scale(1,1);
+  opacity: 1;
+  position: absolute;
+}
+
+/* END CSS Media Queries */
+
+.sdspa-shell-body-bodywrap-projectscontainer {
   background: grey;
-  height: 100px;
-  width: 1300px;
-  position: absolute;
-  top: 145px;
-  left: 0;
-  margin-left: -1300px;
 }
 
-.sdspa-shell-body-biocontainer {
+.sdspa-shell-body-bodywrap-biocontainer {
   background: #FFFFFF;
-  margin: 30px 18px;
-  height: 100px;
+  color: black;
 }
 
-.sdspa-shell-body-writingscontainer {
+.sdspa-shell-body-bodywrap-writingscontainer {
   background: black;
-  height: 100px;
-  width: 1300px;
-  position: absolute;
-  top: 145px;
-  right: 0;
-  margin-right: -1300px;
 }

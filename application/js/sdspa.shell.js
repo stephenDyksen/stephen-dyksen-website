@@ -35,7 +35,7 @@ sdspa.shell = (function () {
         jqueryMap = {},
 
         copyAnchorMap, setJqueryMap, changeAnchorPart, onHashchange,
-        setChatAnchor, initializeModule
+        setSectionAnchor, initializeModule
     ;
     //----------------- END MODULE SCOPED VARIABLES ---------------
 
@@ -162,19 +162,19 @@ sdspa.shell = (function () {
         _s_section_proposed = anchor_map_proposed._s_section;
 
         if ( ! anchor_map_previous || _s_section_previous !== _s_section_proposed) {
-            s_section_proposed = anchor_map_proposed.chat;
+            s_section_proposed = anchor_map_proposed.section;
             switch ( s_section_proposed ) {
                 case 'projects' :
-                    is_ok = spa.body.setBody( 'projects' );
+                    is_ok = sdspa.shell.body.setBody( 'projects' );
                     break;
                 case 'bio' :
-                    is_ok = spa.body.setSliderPosition( 'bio' );
+                    is_ok = sdspa.shell.body.setBody( 'bio' );
                     break;
                 case 'writings' :
-                    is_ok = spa.body.setSliderPosition( 'writings' );
+                    is_ok = sdspa.shell.body.setBody( 'writings' );
                     break;
                 default :
-                    spa.chat.setSliderPosition( 'closed' );
+                    sdspa.shell.body.setBody( 'bio' );
                     delete anchor_map_proposed.chat;
                     $.uriAnchor.setAnchor( anchor_map_proposed, null, true );
             }
@@ -206,14 +206,14 @@ sdspa.shell = (function () {
     // argument in another function and later execute that passed-in function
     // or even return it to be executed later.
 
-    // Begin callback method /setChatAnchor/
-    // Example : setChatAnchor( 'closed' );
-    // Purpose : Change the chat component of the anchor
+    // Begin callback method /setSectionAnchor/
+    // Example : setSectionAnchor( 'projects' );
+    // Purpose : Change section being displayed as the body
     // Arguments:
-    // * position_type - may be 'closed' or 'opened'
+    // * section - may be 'projects', 'bio', or 'writings'
     //
-    setChatAnchor = function ( position_type ){
-        return changeAnchorPart({ chat : position_type });
+    setSectionAnchor = function ( selected_section ){
+        return changeAnchorPart({ section : selected_section });
     };
     // End callback method /setChatAnchor/
     //----------------------- END CALLBACKS ----------------------
@@ -250,6 +250,7 @@ sdspa.shell = (function () {
         // BEGIN configure and initialize feature modules
         sdspa.shell.header.configureModule({
           // pass callback functions here
+          set_section_anchor : setSectionAnchor
         });
         sdspa.shell.header.initializeModule(jqueryMap.$html_header_container);
 
