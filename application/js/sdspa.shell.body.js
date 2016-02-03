@@ -12,9 +12,11 @@ sdspa.shell.body = (function () {
         staticConfigurationMap = {
 
             html_body : String() +
-              '<div class="sdspa-shell-body-projectscontainer sdspa-shell-body-pageitem"></div>' +
-              '<div class="sdspa-shell-body-biocontainer sdspa-shell-body-pageitem"></div>' +
-              '<div class="sdspa-shell-body-writingscontainer sdspa-shell-body-pageitem"></div>'
+              '<div class="sdspa-shell-body-projectscontainer sdspa-shell-body-lift"></div>' +
+              '<div class="sdspa-shell-body-biocontainer sdspa-shell-body-lift">' +
+                
+              '</div>' +
+              '<div class="sdspa-shell-body-writingscontainer sdspa-shell-body-lift"></div>'
         },
 
         // Use to cache jquery collections, and avoid extraneous document traversals

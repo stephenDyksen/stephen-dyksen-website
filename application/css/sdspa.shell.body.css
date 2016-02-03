@@ -4,14 +4,14 @@
   margin: 0 auto;
 }
 
-.sdspa-shell-body-pageitem {
+.sdspa-shell-body-lift {
   box-shadow: 0 4px 4px 3px rgba(0,0,0,0.2);
 }
 
 .sdspa-shell-body-projectscontainer {
-  background: orange;
+  background: grey;
   height: 100px;
-  width: 1320px;
+  width: 1300px;
   position: absolute;
   top: 145px;
   left: 0;
@@ -19,16 +19,17 @@
 }
 
 .sdspa-shell-body-biocontainer {
-  background: black;
+  background: #FFFFFF;
   margin: 30px 18px;
   height: 100px;
 }
 
 .sdspa-shell-body-writingscontainer {
-  background: pink;
+  background: black;
   height: 100px;
-  width: 1000px;
+  width: 1300px;
   position: absolute;
   top: 145px;
   right: 0;
+  margin-right: -1300px;
 }
