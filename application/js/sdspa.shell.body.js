@@ -13,13 +13,13 @@ sdspa.shell.body = (function () {
 
             html_body : String() +
               '<div class=sdspa-shell-body-bodywrap>' +
-                '<div class="sdspa-shell-body-bodywrap-projectscontainer sdspa-shell-body-bodywrap-container">' +
+                '<div class="sdspa-shell-body-bodywrap-projectscontainer fadeout-item">' +
                   'Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.' +
                 '</div>' +
-                '<div class="sdspa-shell-body-bodywrap-biocontainer sdspa-shell-body-bodywrap-container">' +
+                '<div class="sdspa-shell-body-bodywrap-biocontainer fadeout-item">' +
                   'Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. ' +
                 '</div>' +
-                '<div class="sdspa-shell-body-bodywrap-writingscontainer sdspa-shell-body-bodywrap-container">' +
+                '<div class="sdspa-shell-body-bodywrap-writingscontainer fadeout-item">' +
                   'Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.Lorem ipsum dolor sit amet, mea no laboramus adipiscing consectetuer, pri definitiones necessitatibus te. Vim ne alia quodsi liberavisse, eum et dicat assum nostrud. Dicta iudicabit vim et. Est an sumo doctus scripserit.' +
                 '</div>' +
               '</div>'
@@ -51,19 +51,19 @@ sdspa.shell.body = (function () {
     setBody = function (selected_section) {
       switch(selected_section) {
         case 'projects':
-          jqueryMap.$projects_container.addClass("sdspa-shell-body-bodywrap-container-open");
-          jqueryMap.$bio_container.removeClass("sdspa-shell-body-bodywrap-container-open");
-          jqueryMap.$writings_container.removeClass("sdspa-shell-body-bodywrap-container-open");
+          jqueryMap.$projects_container.addClass("fadeout-item-open");
+          jqueryMap.$bio_container.removeClass("fadeout-item-open");
+          jqueryMap.$writings_container.removeClass("fadeout-item-open");
           break;
         case 'bio':
-          jqueryMap.$projects_container.removeClass("sdspa-shell-body-bodywrap-container-open");
-          jqueryMap.$bio_container.addClass("sdspa-shell-body-bodywrap-container-open");
-          jqueryMap.$writings_container.removeClass("sdspa-shell-body-bodywrap-container-open");
+          jqueryMap.$projects_container.removeClass("fadeout-item-open");
+          jqueryMap.$bio_container.addClass("fadeout-item-open");
+          jqueryMap.$writings_container.removeClass("fadeout-item-open");
           break;
         case 'writings':
-          jqueryMap.$projects_container.removeClass("sdspa-shell-body-bodywrap-container-open");
-          jqueryMap.$bio_container.removeClass("sdspa-shell-body-bodywrap-container-open");
-          jqueryMap.$writings_container.addClass("sdspa-shell-body-bodywrap-container-open");
+          jqueryMap.$projects_container.removeClass("fadeout-item-open");
+          jqueryMap.$bio_container.removeClass("fadeout-item-open");
+          jqueryMap.$writings_container.addClass("fadeout-item-open");
           break;
         default:
           break;

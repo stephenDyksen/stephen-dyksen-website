@@ -9,25 +9,21 @@
   margin: 30px 18px;
 }
 
-.sdspa-shell-body-bodywrap-container {
+/* BEGIN Body animations for float in/out */
+.fadeout-item {
   position: absolute;
   transition: all 800ms ease;
   transform: scale(0,0);
   opacity: 0;
-}
-
-.sdspa-shell-body-bodywrap-container-item {
   box-shadow: 0 4px 4px 3px rgba(0,0,0,0.2);
 }
 
-/* BEGIN Body animations for float in/out */
-
-.sdspa-shell-body-bodywrap-container-open {
+.fadeout-item-open {
   transform: scale(1,1);
   opacity: 1;
   position: absolute;
+  box-shadow: 0 4px 4px 3px rgba(0,0,0,0.2);
 }
-
 /* END CSS Media Queries */
 
 .sdspa-shell-body-bodywrap-projectscontainer {
