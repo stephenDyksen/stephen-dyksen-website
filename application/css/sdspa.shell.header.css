@@ -9,10 +9,9 @@ Colors:
   position: relative;
   text-transform: uppercase;
   margin: 0 auto;
-  padding-top: 28px;
-  box-shadow: 0 8px 6px rgba(0,0,0,0.2);
-  background: #FFFFFF;
-  color: #E54234;
+  padding-top: 55px;
+  /*box-shadow: 0 8px 6px rgba(0,0,0,0.2);*/
+  /*color: #E54234;*/
 }
 
 /* BEGIN Rolling Links idea from http://tympanus.net/Development/CreativeLinkEffects/#nav-link-rolling-effect */
@@ -95,10 +94,13 @@ Colors:
 }
 
 .sdspa-shell-header-mainnavcontainer-name {
+  font-family: 'Nothing You Could Do', cursive;
   display: inline;
-  font-size: 48px;
+  font-size: 41px;
   letter-spacing: 2px;
   margin-left: 28px;
+  position: relative;
+  top: 0;
 }
 
 .sdspa-shell-header-mainnavcontainer-mainnav {
