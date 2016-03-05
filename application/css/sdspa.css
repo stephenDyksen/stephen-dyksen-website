@@ -438,12 +438,12 @@ th {
 body {
   font-family: 'Ubuntu', sans-serif;
   /*background: #E54234;*/
-  background-image: url(../resources/stephen-bkg.jpg);
+  /*background-image: url(../resources/stephen-bkg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 0%;
   background-attachment: fixed;
-  background-color: #000000;
+  background-color: #000000;*/
   color:#FFFFFF;
 }
 
